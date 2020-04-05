@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ChatToPDF from './components/ChatToPDF';
 import './index.css';
+import './App.css';
+
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+var obj = { name: "John", age: 30, city: "New York" };
 ReactDOM.render(
   <React.StrictMode>
-   <ChatToPDF />
+   
+       <ChatToPDF obj={obj}/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
